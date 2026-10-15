@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust & Wild: Travel & Adventure Field Notes</title>
+  <meta name="description" content="Explore world trails, wild camping guides, ultralight backpacking gear reviews, and budget itineraries across seven continents.">
+  <link rel="canonical" href="https://your-site.vercel.app/">
+
+  <!-- Open Graph / SEO Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wanderlust & Wild: Travel & Adventure Field Notes">
+  <meta property="og:description" content="In-depth trail reports, wilderness ethics, and global budget travel guides.">
+  <meta property="og:image" content="assets/hero.jpg">
+
+  <style>
+    :root {
+      --bg: #0f1416;
+      --card-bg: #182024;
+      --text: #e6edf3;
+      --muted: #94a3b8;
+      --accent: #2dd4bf;
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      background-color: #12181b;
+      border-bottom: 1px solid #27353b;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .hero {
+      position: relative;
+      height: 420px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero-img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: brightness(45%);
+      z-index: 1;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; }
+    .hero-content h1 { font-size: 2.5rem; margin-bottom: 0.75rem; color: #fff; }
+    .hero-content p { font-size: 1.15rem; color: var(--muted); }
+    main { max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    article {
+      background-color: var(--card-bg);
+      border: 1px solid #243137;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    article:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .post-img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .meta-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    article h2 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #fff; line-height: 1.35; }
+    article p { font-size: 0.925rem; color: var(--muted); margin-bottom: 1rem; flex-grow: 1; }
+    .read-time { font-size: 0.8rem; color: #64748b; }
+    footer {
+      border-top: 1px solid #27353b;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #64748b;
+      font-size: 0.875rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Wanderlust & Wild</a>
+    <nav style="color: var(--muted); font-size: 0.9rem;">Field Notes • Dispatch • Guides</nav>
+  </header>
+
+  <section class="hero">
+    <img src="assets/hero.jpg" alt="Misty mountain ridge at sunrise" class="hero-img">
+    <div class="hero-content">
+      <h1>Wild Trails & Remote Horizons</h1>
+      <p>Practical expedition guides, lightweight packing strategies, and route notes for independent travellers.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="grid">
+      <article>
+        <img src="assets/post-1.jpg" alt="Hiking trail winding along Alpine peaks" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Europe • Trekking</span>
+          <h2>Top 7 Hidden Trails in the Swiss Alps</h2>
+          <p>Skip the crowded Jungfrau loops. These high-pass trails through Graubünden deliver solitary glacier panoramas, wild tarns, and rustic shepherd refuges.</p>
+          <span class="read-time">6 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-2.jpg" alt="Backpacker crossing a suspension bridge in Asia" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Southeast Asia • Budget</span>
+          <h2>Solo Backpacking Southeast Asia: A First-Timer’s Guide</h2>
+          <p>Everything you need to navigate sleeper trains, border crossings, street food safety, and SIM card logistics across Thailand, Laos, and Vietnam.</p>
+          <span class="read-time">9 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-3.jpg" alt="Ultralight gear arranged neatly on a tarp" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Gear Guide • Packing</span>
+          <h2>Essential Ultralight Hiking Gear Checklist (Under 10 lbs)</h2>
+          <p>Cut your base weight without compromising safety. Our tested list covers Dyneema tarps, quilt insulation ratings, and titanium cooksets.</p>
+          <span class="read-time">5 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-4.jpg" alt="Arid salt flats and mountains in the Atacama Desert" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">South America • Expeditions</span>
+          <h2>Surviving the High Atacama: Desert Trekking Notes</h2>
+          <p>High-altitude aridity demands disciplined hydration and cold-weather desert layering. Field notes on traversing Chile’s Valle de la Luna.</p>
+          <span class="read-time">7 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-5.jpg" alt="Camper van parked beside a scenic forest road" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Van Life • DIY</span>
+          <h2>Van Life 101: Converting a Cargo Van on a Budget</h2>
+          <p>Step-by-step insulation, 12V solar electrical setup, and basic framing tips to convert an empty cargo van into an off-grid home on wheels.</p>
+          <span class="read-time">11 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-6.jpg" alt="Fjord coastline in western Norway" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Scandinavia • Camping</span>
+          <h2>Norway's Western Fjords: Ferry Hopping & Wild Camping</h2>
+          <p>How Norway’s 'Allemannsretten' (Right to Roam) allows you to pitch a tent in some of the most dramatic landscapes on earth for free.</p>
+          <span class="read-time">8 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-7.jpg" alt="Geodesic four-season tent pitched in snow" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Gear Guide • Winter</span>
+          <h2>How to Choose the Right 4-Season Expedition Tent</h2>
+          <p>Understanding pole architecture, snow loading resilience, double-wall ventilation, and storm guy-out points for extreme weather.</p>
+          <span class="read-time">6 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-8.jpg" alt="Colorful colonial streets and backpackers" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">South America • Budget</span>
+          <h2>Budget Travel in South America: Costs, Safety & Routes</h2>
+          <p>Realistic monthly budgets, overnight coach safety protocols, and scenic highland itineraries through Peru, Bolivia, and Ecuador.</p>
+          <span class="read-time">10 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-9.jpg" alt="Hiker stepping carefully on a marked rock trail" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Conservation • Ethics</span>
+          <h2>Leave No Trace: Practical Wilderness Ethics</h2>
+          <p>Beyond packing out candy wrappers: proper greywater disposal, camp sanitation, campfire restrictions, and minimizing trail erosion.</p>
+          <span class="read-time">4 min read • Updated October 2026</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/post-10.jpg" alt="Diver submerged in sunlit limestone cenote waters" class="post-img" loading="lazy">
+        <div class="card-body">
+          <span class="meta-tag">Central America • Diving</span>
+          <h2>Scuba Diving the Cenotes of Yucatan: What to Know</h2>
+          <p>Navigating haloclines, cavern buoyancy control, guide ratios, and cavern diver certification prerequisites in Quintana Roo's underground river network.</p>
+          <span class="read-time">7 min read • Updated October 2026</span>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wanderlust & Wild. Built for adventurers and explorers worldwide.</p>
+  </footer>
+
+</body>
+</html>
